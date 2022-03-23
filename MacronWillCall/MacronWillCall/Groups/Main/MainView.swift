@@ -7,15 +7,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
+    // MARK: - Properties
+    @StateObject private var viewModel = MainViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
+        Text(viewModel.question)
+            .padding()
+        Text(viewModel.answer ?? "")
             .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }

@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		9F57801327EBB5CB0087DE31 /* MacronWillCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57801227EBB5CB0087DE31 /* MacronWillCallApp.swift */; };
-		9F57801527EBB5CB0087DE31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57801427EBB5CB0087DE31 /* ContentView.swift */; };
+		9F57801527EBB5CB0087DE31 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57801427EBB5CB0087DE31 /* MainView.swift */; };
 		9F57801727EBB5CC0087DE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F57801627EBB5CC0087DE31 /* Assets.xcassets */; };
 		9F57801A27EBB5CC0087DE31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F57801927EBB5CC0087DE31 /* Preview Assets.xcassets */; };
+		9F57802527EBB8990087DE31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57802427EBB8990087DE31 /* Constants.swift */; };
+		9F57802A27EBB9020087DE31 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57802927EBB9020087DE31 /* NetworkService.swift */; };
+		9F57802F27EBBE950087DE31 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57802E27EBBE950087DE31 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F57800F27EBB5CB0087DE31 /* MacronWillCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacronWillCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F57801227EBB5CB0087DE31 /* MacronWillCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacronWillCallApp.swift; sourceTree = "<group>"; };
-		9F57801427EBB5CB0087DE31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F57801427EBB5CB0087DE31 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9F57801627EBB5CC0087DE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F57801927EBB5CC0087DE31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9F57802427EBB8990087DE31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9F57802927EBB9020087DE31 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9F57802E27EBBE950087DE31 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,13 @@
 		9F57801127EBB5CB0087DE31 /* MacronWillCall */ = {
 			isa = PBXGroup;
 			children = (
-				9F57801227EBB5CB0087DE31 /* MacronWillCallApp.swift */,
-				9F57801427EBB5CB0087DE31 /* ContentView.swift */,
-				9F57801627EBB5CC0087DE31 /* Assets.xcassets */,
+				9F57802127EBB6490087DE31 /* Base */,
+				9F57802827EBB8F20087DE31 /* NetworkService */,
+				9F57802027EBB5FE0087DE31 /* Services */,
+				9F57802327EBB8890087DE31 /* Helpers */,
+				9F57802B27EBBD3A0087DE31 /* Groups */,
 				9F57801827EBB5CC0087DE31 /* Preview Content */,
+				9F57801627EBB5CC0087DE31 /* Assets.xcassets */,
 			);
 			path = MacronWillCall;
 			sourceTree = "<group>";
@@ -65,6 +74,70 @@
 				9F57801927EBB5CC0087DE31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9F57802027EBB5FE0087DE31 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F57802227EBB6570087DE31 /* NeuralLinkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9F57802127EBB6490087DE31 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9F57801227EBB5CB0087DE31 /* MacronWillCallApp.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9F57802227EBB6570087DE31 /* NeuralLinkService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NeuralLinkService;
+			sourceTree = "<group>";
+		};
+		9F57802327EBB8890087DE31 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F57802427EBB8990087DE31 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9F57802827EBB8F20087DE31 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				9F57802927EBB9020087DE31 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		9F57802B27EBBD3A0087DE31 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				9F57802C27EBBE3F0087DE31 /* Main */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		9F57802C27EBBE3F0087DE31 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9F57801427EBB5CB0087DE31 /* MainView.swift */,
+				9F57802D27EBBE8A0087DE31 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9F57802D27EBBE8A0087DE31 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F57802E27EBBE950087DE31 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F57801527EBB5CB0087DE31 /* ContentView.swift in Sources */,
+				9F57802F27EBBE950087DE31 /* MainViewModel.swift in Sources */,
+				9F57801527EBB5CB0087DE31 /* MainView.swift in Sources */,
 				9F57801327EBB5CB0087DE31 /* MacronWillCallApp.swift in Sources */,
+				9F57802A27EBB9020087DE31 /* NetworkService.swift in Sources */,
+				9F57802527EBB8990087DE31 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
