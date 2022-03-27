@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0CF34627F0E1C400F351A6 /* GPT3Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0CF34527F0E1C400F351A6 /* GPT3Completion.swift */; };
+		9F0CF34827F0E3BB00F351A6 /* NetworkErrorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0CF34727F0E3BB00F351A6 /* NetworkErrorsManager.swift */; };
+		9F0CF34A27F0EA1500F351A6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0CF34927F0EA1500F351A6 /* Request.swift */; };
+		9F0CF34C27F0ECB300F351A6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0CF34B27F0ECB300F351A6 /* APIClient.swift */; };
 		9F57801327EBB5CB0087DE31 /* MacronWillCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57801227EBB5CB0087DE31 /* MacronWillCallApp.swift */; };
 		9F57801527EBB5CB0087DE31 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57801427EBB5CB0087DE31 /* MainView.swift */; };
 		9F57801727EBB5CC0087DE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F57801627EBB5CC0087DE31 /* Assets.xcassets */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F0CF34527F0E1C400F351A6 /* GPT3Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3Completion.swift; sourceTree = "<group>"; };
+		9F0CF34727F0E3BB00F351A6 /* NetworkErrorsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorsManager.swift; sourceTree = "<group>"; };
+		9F0CF34927F0EA1500F351A6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9F0CF34B27F0ECB300F351A6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		9F57800F27EBB5CB0087DE31 /* MacronWillCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacronWillCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F57801227EBB5CB0087DE31 /* MacronWillCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacronWillCallApp.swift; sourceTree = "<group>"; };
 		9F57801427EBB5CB0087DE31 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -38,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F0CF34427F0E1B400F351A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F0CF34527F0E1C400F351A6 /* GPT3Completion.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9F57800627EBB5CA0087DE31 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +126,11 @@
 		9F57802827EBB8F20087DE31 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				9F0CF34B27F0ECB300F351A6 /* APIClient.swift */,
+				9F0CF34927F0EA1500F351A6 /* Request.swift */,
 				9F57802927EBB9020087DE31 /* NetworkService.swift */,
+				9F0CF34727F0E3BB00F351A6 /* NetworkErrorsManager.swift */,
+				9F0CF34427F0E1B400F351A6 /* Models */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -211,9 +231,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F57802F27EBBE950087DE31 /* MainViewModel.swift in Sources */,
+				9F0CF34A27F0EA1500F351A6 /* Request.swift in Sources */,
 				9F57801527EBB5CB0087DE31 /* MainView.swift in Sources */,
 				9F57801327EBB5CB0087DE31 /* MacronWillCallApp.swift in Sources */,
+				9F0CF34627F0E1C400F351A6 /* GPT3Completion.swift in Sources */,
 				9F57802A27EBB9020087DE31 /* NetworkService.swift in Sources */,
+				9F0CF34827F0E3BB00F351A6 /* NetworkErrorsManager.swift in Sources */,
+				9F0CF34C27F0ECB300F351A6 /* APIClient.swift in Sources */,
 				9F57802527EBB8990087DE31 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

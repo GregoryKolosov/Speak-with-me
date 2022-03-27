@@ -10,24 +10,36 @@ import Combine
 
 final class MainViewModel: ObservableObject {
     // MARK: - Input
-    @Published var question: String = "Who are u?"
+    @Published var question: String = ""
+    @Published var sendRequestTrigger: Void? = nil
     
     // MARK: - Output
     @Published var answer: String? = nil
     
+    // MARK: - Properties
+    private var cancellables = [AnyCancellable]()
+    
     // MARK: - Lifecycle
     init() {
-        answerPublisher
-            .assign(to: &$answer)
+        subscribe()
     }
     
-    // MARK: - Publishers
-    private lazy var answerPublisher: AnyPublisher<String?, Never> = {
-        $question
+    // MARK: - Functions
+    private func subscribe() {
+        $sendRequestTrigger
+            .compactMap { $0 }
+            .combineLatest($question, { _, question -> String in
+                return question
+            })
             .flatMap { question in
-                NetworkService.answer(with: question)
+                openApiClient.dispatch(OpenApiCompletionRequest(question: question))
             }
             .receive(on: DispatchQueue.main)
-            .eraseToAnyPublisher()
-    }()
+            .sink(receiveCompletion: { result in },
+                  receiveValue: { value in
+                    self.answer = value.choices.first?.text
+                    self.sendRequestTrigger = nil
+            })
+            .store(in: &cancellables)
+    }
 }

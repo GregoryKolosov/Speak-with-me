@@ -6,5 +6,5 @@
 //
 
 enum ApiConstants {
-    static let GPT3ApiKey = "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"
+    static let GPT3ApiKey = ""
 }
