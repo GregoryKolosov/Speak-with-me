@@ -11,12 +11,17 @@
 		9F0CF34827F0E3BB00F351A6 /* NetworkErrorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0CF34727F0E3BB00F351A6 /* NetworkErrorsManager.swift */; };
 		9F0CF34A27F0EA1500F351A6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0CF34927F0EA1500F351A6 /* Request.swift */; };
 		9F0CF34C27F0ECB300F351A6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0CF34B27F0ECB300F351A6 /* APIClient.swift */; };
+		9F199CF527F7A3A400F37CB7 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F199CF427F7A3A400F37CB7 /* NetworkLayer.swift */; };
+		9F199CF727F7A3C200F37CB7 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F199CF627F7A3C200F37CB7 /* NetworkErrors.swift */; };
+		9F199CF927F7A3E100F37CB7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F199CF827F7A3E100F37CB7 /* NetworkService.swift */; };
+		9F199CFC27F7A42F00F37CB7 /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F199CFB27F7A42F00F37CB7 /* NetworkEnvironment.swift */; };
+		9F199CFE27F7A4BB00F37CB7 /* OpenApiCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F199CFD27F7A4BB00F37CB7 /* OpenApiCompletion.swift */; };
 		9F57801327EBB5CB0087DE31 /* MacronWillCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57801227EBB5CB0087DE31 /* MacronWillCallApp.swift */; };
 		9F57801527EBB5CB0087DE31 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57801427EBB5CB0087DE31 /* MainView.swift */; };
 		9F57801727EBB5CC0087DE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F57801627EBB5CC0087DE31 /* Assets.xcassets */; };
 		9F57801A27EBB5CC0087DE31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F57801927EBB5CC0087DE31 /* Preview Assets.xcassets */; };
 		9F57802527EBB8990087DE31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57802427EBB8990087DE31 /* Constants.swift */; };
-		9F57802A27EBB9020087DE31 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57802927EBB9020087DE31 /* NetworkService.swift */; };
+		9F57802A27EBB9020087DE31 /* NetworkServiceOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57802927EBB9020087DE31 /* NetworkServiceOld.swift */; };
 		9F57802F27EBBE950087DE31 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57802E27EBBE950087DE31 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,13 +30,18 @@
 		9F0CF34727F0E3BB00F351A6 /* NetworkErrorsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorsManager.swift; sourceTree = "<group>"; };
 		9F0CF34927F0EA1500F351A6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9F0CF34B27F0ECB300F351A6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9F199CF427F7A3A400F37CB7 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		9F199CF627F7A3C200F37CB7 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		9F199CF827F7A3E100F37CB7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9F199CFB27F7A42F00F37CB7 /* NetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
+		9F199CFD27F7A4BB00F37CB7 /* OpenApiCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenApiCompletion.swift; sourceTree = "<group>"; };
 		9F57800F27EBB5CB0087DE31 /* MacronWillCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacronWillCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F57801227EBB5CB0087DE31 /* MacronWillCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacronWillCallApp.swift; sourceTree = "<group>"; };
 		9F57801427EBB5CB0087DE31 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9F57801627EBB5CC0087DE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F57801927EBB5CC0087DE31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F57802427EBB8990087DE31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		9F57802927EBB9020087DE31 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9F57802927EBB9020087DE31 /* NetworkServiceOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceOld.swift; sourceTree = "<group>"; };
 		9F57802E27EBBE950087DE31 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +60,26 @@
 			isa = PBXGroup;
 			children = (
 				9F0CF34527F0E1C400F351A6 /* GPT3Completion.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F199CF327F7A39400F37CB7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9F199CF427F7A3A400F37CB7 /* NetworkLayer.swift */,
+				9F199CF627F7A3C200F37CB7 /* NetworkErrors.swift */,
+				9F199CF827F7A3E100F37CB7 /* NetworkService.swift */,
+				9F199CFB27F7A42F00F37CB7 /* NetworkEnvironment.swift */,
+				9F199CFA27F7A42200F37CB7 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9F199CFA27F7A42200F37CB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F199CFD27F7A4BB00F37CB7 /* OpenApiCompletion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -73,6 +103,7 @@
 		9F57801127EBB5CB0087DE31 /* MacronWillCall */ = {
 			isa = PBXGroup;
 			children = (
+				9F199CF327F7A39400F37CB7 /* Network */,
 				9F57802127EBB6490087DE31 /* Base */,
 				9F57802827EBB8F20087DE31 /* NetworkService */,
 				9F57802027EBB5FE0087DE31 /* Services */,
@@ -128,7 +159,7 @@
 			children = (
 				9F0CF34B27F0ECB300F351A6 /* APIClient.swift */,
 				9F0CF34927F0EA1500F351A6 /* Request.swift */,
-				9F57802927EBB9020087DE31 /* NetworkService.swift */,
+				9F57802927EBB9020087DE31 /* NetworkServiceOld.swift */,
 				9F0CF34727F0E3BB00F351A6 /* NetworkErrorsManager.swift */,
 				9F0CF34427F0E1B400F351A6 /* Models */,
 			);
@@ -235,9 +266,14 @@
 				9F57801527EBB5CB0087DE31 /* MainView.swift in Sources */,
 				9F57801327EBB5CB0087DE31 /* MacronWillCallApp.swift in Sources */,
 				9F0CF34627F0E1C400F351A6 /* GPT3Completion.swift in Sources */,
-				9F57802A27EBB9020087DE31 /* NetworkService.swift in Sources */,
+				9F57802A27EBB9020087DE31 /* NetworkServiceOld.swift in Sources */,
+				9F199CFE27F7A4BB00F37CB7 /* OpenApiCompletion.swift in Sources */,
 				9F0CF34827F0E3BB00F351A6 /* NetworkErrorsManager.swift in Sources */,
 				9F0CF34C27F0ECB300F351A6 /* APIClient.swift in Sources */,
+				9F199CFC27F7A42F00F37CB7 /* NetworkEnvironment.swift in Sources */,
+				9F199CF727F7A3C200F37CB7 /* NetworkErrors.swift in Sources */,
+				9F199CF527F7A3A400F37CB7 /* NetworkLayer.swift in Sources */,
+				9F199CF927F7A3E100F37CB7 /* NetworkService.swift in Sources */,
 				9F57802527EBB8990087DE31 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

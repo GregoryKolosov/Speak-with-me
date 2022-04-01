@@ -5,12 +5,10 @@
 //  Created by Grigoriy Kolosov on 27.03.2022.
 //
 
-import Foundation
+//import Foundation
+//
+//struct GPT3Completion: Codable {
+//    let choices: [Choice]
+//}
 
-struct GPT3Completion: Codable {
-    let choices: [Choice]
-}
 
-struct Choice: Codable {
-    let text: String
-}
